@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Responsive Redesign Presentation Page
+        </title>
+        <style>
+            .header {
+                background-color: teal;
+                padding: 20px;
+                text-align: center;
+            }
+            p {
+                font-size: large;
+                text-align: center;
+                font-style: normal;
+                font-weight: 1000;
+                border: 2px teal;
+                border-radius: 5px;
+                padding: 5px;
+                margin-right: 150px;
+                margin-left: 80px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            body {
+                background-image: url("https://images-cdn.welcomesoftware.com/Zz05NmM1YjFjYjhlNDIxMWViODczZWQzYzBkNTFlNDU4ZA==");
+            }
+            ul {
+                text-align: center;
+                font-style: normal;
+                font-weight: 800;
+                border: 2px teal;
+                border-radius: 5px;
+                padding: 5px;
+                margin-right: 150px;
+                margin-left: 80px;
+            }
+            hr.dashed {
+                border-top: 1px dashed white;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            img {
+                display: block;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "header">
+            <h2 style = "color:white;font-size:250%;">
+                Responsive Redesign Project
+            </h2>
+        </div>
+        <br>
+        <center style="font-size:200%;font-weight: 600;">
+            Part 1: Chosen Website Interface
+        </center>
+        <br>
+        <img src="Samson Realty Screenshot.png">
+        <p>
+            The website I have chosen to redesign is the <a href="https://www.samsonrealty.com/">Samson Realty Website</a> - Samson realty is a realtor company that
+            leases properties on the East Side of Providence. I chose to redesign this website because the current website is
+            extremely cluttered, without a clear directive for the viewer. It has limited styling, and has too much information
+            present on the home screen page. 
+        </p>
+        <hr class="dashed">
+        <center style="font-size:150%;font-weight: 800;">
+            List of Current Problems:
+        </center>
+        <p>
+            - Information regarding housing and property listings is not clearly seperated from Realty information such as 
+            employee hiring, advertisements, etc.
+        </p>
+        <p>
+            - Website is not sized properly, there is blank whitespace on the right on desktop, and when resizing, the website
+            elements do not adjust with the webpage, instead just getting cut off statically. 
+        </p>
+        <p>
+            - For the housing listings themselves, text is too small to read in many places, and color of text with the backsplash
+            of the property images results in hard visibility and limited legibility.
+        </p>
+        <p>
+            - Since the table elements used to display properties are a fixed size throughout the webpage, every table has multiple
+            missing elements, with empty headers within the table and no images where there should be due to this specific layout. 
+        </p>
+        <p>
+            - Due to the limited space available for each property listing, limited to no information can be presented about each individual
+            property. When clicking on some images to get more information, only a certain few redirect to a page with more information, 
+            some include broken or nonexistent links. 
+        </p>
+        <p>
+            - Some instances of contact information in the page automatically link to a phone call or email, but other duplicated instances 
+            do not link to the appropriate contact links, despite the design around it implying that the information serves as
+            as link. 
+        </p>
+        <hr class="dashed">
+        <center style="font-size:150%;font-weight: 800;">
+            WebAIM WAVE Findings:
+        </center>
+        <p>
+            WebAIM WAVE found an abundance of Accessibility problems with this webpage, including but not limited to:
+        </p>
+        <p>
+            - 34 Images without any alternative text present, making navigation especially difficult for users that may depend
+            on alternative text.
+        </p>
+        <p>
+            - 5 Empty links, that are indicated as links but do not link to any external or internal pages. 
+        </p>
+        <p>
+            - 2 Missing Page Titles, which can be seen by the lack of identifying information or distinguishment between
+            differnet sections of the website.
+        </p>
+        <p>
+            - 43 Layout Table Alerts, referring to poor table structures with many missing elements. or improper sizing 
+            between different table elements. 
+        </p>
+        <p>
+            I agree with the errors that are identified by WebAIM, and especially agree with the notes on Table Alerts. There 
+            are many ways to organize the property information that would allow for the space on the page to be properly used. 
+            The links are inconsistent throughout the page, especially with some images linking to external pages and others being
+            static. I also think that the page could strongly benefit from a clear diversification of information, perhaps even
+            seperated out into different pages, as opposed to all information being shown to the user at once. 
+        </p>
+        <hr class="dashed">
+        <center style="font-size:150%;font-weight: 800;">
+            Low-Fidelity Wireframes:
+            <img src="desktop lofi.jpg" style="width: 50%;">
+            <img src="tablet lofi.jpg"  style="width: 50%;">
+            <img src="phone lofi.jpg"  style="width: 50%;">
+        </center>
+        <hr class="dashed">
+
+        <center style="font-size:150%;font-weight: 800;">
+            High-Fidelity Wireframes:
+            <img src="desktop hi-fi.jpg" style="width: 50%;">
+            <img src="tablet hi-fi.jpg"  style="width: 50%;">
+            <img src="phone hi-fi.jpg"  style="width: 35%;">
+            <p>
+                See Annotations here (including CSS Annotations for developers):
+                <p>
+                    - font-family: 'Montserrat'
+                    - font-style: normal;
+                    - font-weight: 400;
+                </p>
+                <p>
+                    - body {
+                        font-family:"Montserrat";
+                    }
+                </p>
+                <p>
+                    - h3 {
+                        font-weight: 800;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                </p>
+                <p>
+                    - h4{
+                        font-weight: 600;
+                    }
+                </p>
+                <p> - For the rows of the checklist box: .row {
+                    display: flex;
+                }</p>
+                <p>
+                    - For the columns of the checklist box: .column {
+                        flex: 33%;
+                        padding: 5rem;
+                    }
+                </p>
+                <p>
+                    - Notable Sizing Change: As you may see, in the phone layout, the tabs are meant
+                    to dissapear at the top of the page to avoid visual clutter. Fonts will auto-adjust
+                    to sizing due to the bootstrap properties, as will other elements (images, tables). 
+                </p>
+
+            </p>
+        </center>
+        <hr class="dashed">
+
+        <center style="font-size:150%;font-weight: 800;">
+            Link to Redesigned Webpage:
+            <a href="https://zanyzebra175.github.io/responsiveredesignpage/samson">Click Here</a>
+        </center>
+        <hr class="dashed">
+        <p>
+            Thank you for reading!
+        </p>
+    </body>
+</html>
